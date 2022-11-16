@@ -1,0 +1,186 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    margin: auto;
+    text-align: center;
+    background: #fff;
+}
+@keyframes a
+{
+    0%
+    {
+        background-position: left;
+    }
+    50%
+    {
+        background-position: right;
+    }
+    100%
+    {
+        background-position: left;
+    }
+}
+.z,.zz,.zn,.zp,#mb,#gb,#u,#zu
+{
+    background: url(bg.jpg);
+    background-size: 200%;
+    animation: a 15s infinite; 
+    border-style: none;
+    transition: 0.5s;
+}
+#gb,#u
+{
+    margin: auto;
+    width: 51vw;
+    border: 5pt solid white;
+    border-radius: 25pt;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+    padding: 3pt;
+    filter: drop-shadow(0px 0px 10px black)
+}
+#w
+{
+    width: 51vw;
+    height: 8vh;
+    background: white;
+    padding: 10pt;
+    border-style: none;
+    border-radius: 25pt;
+    font-size: 20pt;
+    font-weight: 800;
+    color:black;
+}
+#pd,#ub
+{
+    background: white;
+    margin-top: 3pt;
+    border-radius: 25pt;
+}
+.z,.zp,.zz,.zn,#mb
+{
+    width: 16vw;
+    height: 7vh;
+    font-size: 20pt;
+    font-weight: 800;
+    color: white;
+    border-radius: 20pt;
+    margin: 5pt;
+}
+#s1,#j1
+{
+    width: 24vw;
+    margin: 10pt;
+}
+.zz
+{
+    width: 11vw;
+}
+#b,#m,#mb,#u
+{
+    display: none;
+}
+#mb
+{
+    width: auto;
+    min-height: 8vh;
+    height: auto;
+}
+#t
+{
+    transition: 1s;
+    background: url(s.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 19vh;
+    border-style: none;
+}
+#tr,#zu,#je
+{
+    transition: 0.5s;
+    background: url(l.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-style: none;
+    color: transparent;
+    width: 10vw;
+    height: 19vh;
+    margin: 10pt;
+    border-radius: 25pt;
+}
+#tr
+{
+    filter: drop-shadow(20px 10px 20px #fccb42) drop-shadow(10px 5px 10px #fccb42) drop-shadow(-20px 10px 20px #fccb42);
+}
+#ub
+{
+    margin: 0;
+    padding: 10pt;
+}
+#f
+{
+    color: black;
+    font-size: 15pt;
+}
+#u
+{
+    margin-bottom: 80pt;
+}
+#je
+{
+    background: url(p.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20vw;
+    background-position: center;
+    filter: drop-shadow(0px 0px 10px black);
+}
+footer
+{
+    transition: 0.5s;
+    margin-top: 10pt;
+}
+#tr:hover
+{
+    transition: 0.5s;
+    background-image: url(d.png);
+    filter: drop-shadow(-20px 40px 20px black) drop-shadow(20px 40px 20px black) drop-shadow(0px -20px 40px black);
+}
+.z:hover,.zz:hover,.zn:hover,.zp:hover,#f:hover,#t:hover,#zu:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(-6px -1px 5px #1f4ef6) drop-shadow(6px 1px 5px #00ff89);
+    border-style: none;
+}
+#f:hover
+{
+    font-size: 20pt;
+    filter: drop-shadow(-2px 0px 1px blue) drop-shadow(2px 0px 1px red);
+}
+#zu
+{
+    width: 20vw;
+    background: url(bg.jpg);
+}
+#t:hover
+{
+    filter: drop-shadow(0px 0px 25px #1f4ef6);
+}
+#zu:hover
+{
+    background: url(yp.jpg);
+    animation-duration: 3s;
+    background-size: 300%;
+    filter: drop-shadow(-15px -15px 15px #fbe39b) drop-shadow(0px 0px 15px #fcb8b9) drop-shadow(0px 0px 25px #fcb8b9) drop-shadow(15px 15px 15px #fe68f3);
+}
+#je:hover
+{
+    width: 22vw;
+    height: 22vh;
+    transition: 0.5s;
+}

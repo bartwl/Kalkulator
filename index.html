@@ -1,0 +1,91 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/> 
+        <script src="f.js" type="application/javascript"></script>
+        <script src="p.js" type="application/javascript"></script>
+        <script src="u.js" type="application/javascript"></script>
+        <script src="zcss.js" type="application/javascript"></script>
+        <script src="zjez.js" type="application/javascript"></script>
+        <script src="sff.js" type="application/javascript"></script>
+        <link id="cstyle" rel="stylesheet" type="text/css" href="styl_d_yp.css"/> 
+        <title>Kalkulator</title>
+    </head>
+    <body>
+        <form name="k">
+            <div id="gb">
+                <input id="w" type="text" name="v" disabled>
+                <div id="pd">
+                    <input type="button" class="z" id="s1" value="=" onclick="k.v.value = eval(k.v.value)">
+                    <input type="button" class="z" id="j1" value="Clear All" onclick="k.v.value = ''"><br>
+                    <input type="button" class="z" value="1" onclick="k.v.value += '1'">
+                    <input type="button" class="z" value="2" onclick="k.v.value += '2'">
+                    <input type="button" class="z" value="3" onclick="k.v.value += '3'"><br>
+                    <input type="button" class="z" value="4" onclick="k.v.value += '4'">
+                    <input type="button" class="z" value="5" onclick="k.v.value += '5'">
+                    <input type="button" class="z" value="6" onclick="k.v.value += '6'"><br>
+                    <input type="button" class="z" value="7" onclick="k.v.value += '7'">
+                    <input type="button" class="z" value="8" onclick="k.v.value += '8'">
+                    <input type="button" class="z" value="9" onclick="k.v.value += '9'"><br>
+                    <input type="button" class="z" value="0" onclick="k.v.value += '0'"><br>
+                    <input type="button" class="zz" value="+" onclick="k.v.value += '+'">
+                    <input type="button" class="zz" value="-" onclick="k.v.value += '-'">
+                    <input type="button" class="zz" value="*" onclick="k.v.value += '*'">
+                    <input type="button" class="zz" value="/" onclick="k.v.value += '/'"><br>
+                    <input type="button" class="zz" value="." onclick="k.v.value += '.'">
+                    <input type="button" class="zz" value="(" onclick="k.v.value += '('">
+                    <input type="button" class="zz" value=")" onclick="k.v.value += ')'"><br>
+                    <input type="button" class="zp" id="j2" value="Scientific Function" onclick="f();"><br>
+                    <div id='b'>
+                        <input class="zn" type="button" value="pi" onclick="k.v.value += Math.PI">
+                        <input class="zn" type="button" value="e" onclick="k.v.value += Math.E">
+                        <input class="zn" type="button" value="x2" onclick="k.v.value = Math.pow(k.v.value,2)">
+                        <input class="zn" type="button" value="x3" onclick="k.v.value = Math.pow(k.v.value,3)">
+                        <input class="zn" type="button" value="xy" onclick="k.v.value = Math.pow(k.v.value,prompt('y: '))">
+                        <input class="zn" type="button" value="yx" onclick="k.v.value = Math.pow(prompt('x: '),k.v.value)">
+                        <input class="zn" type="button" value="10x" onclick="k.v.value = Math.pow(10,k.v.value)">
+                        <input class="zn" type="button" value="x!" onclick="x(k.v.value);">
+                        <input class="zn" type="button" value="1/x" onclick="k.v.value = 1/k.v.value">
+                        <input class="zn" type="button" value="√x" onclick="k.v.value = Math.sqrt(k.v.value)">
+                        <input class="zn" type="button" value="3√x" onclick="k.v.value = Math.sqrt(Math.sqrt(k.v.value))">
+                        <input class="zn" type="button" value="y√x" onclick="k.v.value = Math.pow(k.v.value,1/prompt('y: '))">
+                        <input class="zn" type="button" value="cos" onclick="k.v.value = Math.cos(k.v.value)">
+                        <input class="zn" type="button" value="sin" onclick="k.v.value = Math.sin(k.v.value)">
+                        <input class="zn" type="button" value="tan" onclick="k.v.value = Math.tan(k.v.value)">
+                        <input class="zn" type="button" value="cosh" onclick="k.v.value = Math.cosh(k.v.value)">
+                        <input class="zn" type="button" value="sinh" onclick="k.v.value = Math.sinh(k.v.value)">
+                        <input class="zn" type="button" value="tanh" onclick="k.v.value = Math.tanh(k.v.value)">
+                        <input class="zn" type="button" value="cos-1" onclick="k.v.value = Math.acos(k.v.value)">
+                        <input class="zn" type="button" value="sin-1" onclick="k.v.value = Math.asin(k.v.value)">
+                        <input class="zn" type="button" value="tan-1" onclick="k.v.value = Math.atan(k.v.value)">
+                        <input class="zn" type="button" value="cosh-1" onclick="k.v.value = Math.acosh(k.v.value)">
+                        <input class="zn" type="button" value="sinh-1" onclick="k.v.value = Math.asinh(k.v.value)">
+                        <input class="zn" type="button" value="tanh-1" onclick="k.v.value = Math.atanh(k.v.value)">
+                        <input class="zn" type="button" value="log2" onclick="k.v.value = Math.log2(k.v.value)">
+                        <input class="zn" type="button" value="log10" onclick="k.v.value = Math.log10(k.v.value)">
+                        <input class="zn" type="button" value="ln" onclick="k.v.value = Math.log(k.v.value)"><br><br>
+                        <input class="zn" id="j3" type="button" value="random(1-x)" onclick="r(k.v.value);"><br><br>
+                        <input class="zn" id="j4" type="button" value="Rad to Deg" onclick="rtd(k.v.value);">
+                        <input class="zn" id="j5" type="button" value="Deg to Rad" onclick="dtr(k.v.value);"><br><br>
+                    </div>
+                    <input type="button" class="zp" id="j6" value="Memory" onclick="p();"><br><br>
+                    <div id="m">
+                        <input type="button" class="zn" value="M+" onclick="m(k.v.value,1);">
+                        <input type="button" class="zn" value="M-" onclick="m(k.v.value,2);">
+                        <input type="button" class="zn" value="MC" onclick="m(k.v.value,3);"><br>
+                        <div id="mb"></div><br>
+                    </div>
+                </div>
+            </div>
+            <input type="button" id="t" onclick="u();">
+            <div id="u">
+                <div id="ub">
+                    <input type="button" id="tr" onclick="zcss();"><br>
+                    <input type="button" id="zu" onclick="zback();"><br>
+                    <input type="button" id="je" onclick="zjez();"><br>
+                    <div id="f"><footer><p id="j7">Created by Bartłomiej Wlach</p></footer></div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

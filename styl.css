@@ -1,0 +1,571 @@
+*
+{
+    padding: none;
+    margin: none;
+}
+body
+{
+    margin: auto;
+    text-align: center;
+    background: #161616;
+}
+#liquidborder
+{
+    margin: auto;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border: 5pt solid #4a4c4f;
+    border-radius: 20pt;
+    width: 61vw;
+    margin-top: 30pt;
+}
+#wyswietlacz
+{
+    margin: 3pt;
+    width: 60vw;
+    height: 9vh;
+    font-size: 20pt;
+    border-radius: 20pt;
+    font-weight: 700;
+    background: #4a4c4f;
+    color: white;
+    border-style: none;
+    padding: 2pt;
+}
+#podstawoweznaki
+{
+    background: #4a4c4f;
+    margin: 4pt;
+    border-radius: 20pt;
+}
+
+.znaki
+{
+    width: 28vw;
+    height: 7vh;
+    border-radius: 20pt;
+    border-style: none;
+    font-weight: 700;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: #4a4c4f;
+    font-size: 15pt;
+    transition: 0.5s;
+    margin: 8pt;
+}
+.znaki:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+.liczby
+{
+    width: 17vw;
+    height: 9vh;
+    margin: 8pt;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-style: none;
+    border-radius: 20pt;
+    font-weight: 700;
+    font-size: 15pt;
+    color: #4a4c4f;
+}
+.liczby:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 30px white);
+}
+.znaki2
+{
+    width: 12vw;
+    height: 8vh;
+    margin: 8pt;
+    border-style: none;
+    border-radius: 25pt;
+    font-weight: 700;
+    font-size: 18pt;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: #4a4c4f;
+}
+.znaki2:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#znakinaukoweprzycisk
+{
+    width: 20vw;
+    height: 8vh;
+    margin: 8pt;
+    border-style: none;
+    border-radius: 25pt;
+    font-weight: 700;
+    font-size: 18pt;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: #4a4c4f;
+}
+#znakinaukoweprzycisk:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#blok
+{
+    background: #4a4c4f;
+    margin: auto;
+    margin-top: 10pt;
+    padding: 5pt;
+    width: 57vw;
+    border-radius: 20pt;
+    display: none;
+}
+.znakinaukowe
+{
+    width: 15vw;
+    height: 10vh;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-style: none;
+    border-radius: 20pt;
+    margin: 10pt;
+    font-weight: 700;
+    color: #4a4c4f;
+    font-size: 15pt;
+}
+.znakinaukowe:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+.znakiwlasne
+{
+    width: 15vw;
+    height: 8vh;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-style: none;
+    border-radius: 20pt;
+    margin: 2pt;
+    font-weight: 700;
+    color: #4a4c4f;
+    font-size: 15pt;
+}
+.znakiwlasne:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+.konwerter
+{
+   width: 20vw;
+    height: 9vh;
+    border-style: none;
+    border-radius: 20pt;
+    margin: 5pt; 
+    font-weight: 700;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: #4a4c4f;
+    font-size: 15pt;
+}
+.konwerter:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#pamiecprzycisk
+{
+    width: 20vw;
+    height: 8vh;
+    margin: 8pt;
+    border-style: none;
+    border-radius: 25pt;
+    font-weight: 700;
+    font-size: 18pt;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    color: #4a4c4f;
+}
+#pamiecprzycisk:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#blokpamieci
+{
+   display: none; 
+}
+.pamiecfunkcje
+{
+    width: 15vw;
+    height: 8vh;
+    border-style: none;
+    border-radius: 20pt;
+    margin: 2pt;
+    font-weight: 700;
+    color: #4a4c4f;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    font-size: 15pt;
+}
+.pamiecfunkcje:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#pamiec
+{
+    margin: auto;
+    padding: 10pt;
+    width: 80%;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-style: none;
+    border-radius: 20pt;
+    font-size: 15pt;
+    font-weight: 700;
+    display: none;
+    color: #4a4c4f;
+}
+#ustawieniaprzycisk
+{
+    background: url('ustawienia.png');
+    background-size: 100%;
+    border-style: none;
+    margin-bottom:  30pt;
+    margin-top: 20pt;
+    width: 100pt;
+    height: 100pt;
+}
+#ustawieniaprzycisk:hover
+{
+    transition: 0.7s;
+    filter: drop-shadow(0 0 40px #fcd512); 
+}
+#ustawienia
+{
+    margin: auto;
+    background: #555;
+    width: 60vw;
+    height: auto;
+    padding: 10pt;
+    border-radius: 30pt;
+    display: none;
+    margin-bottom: 10vh;
+}
+#trybtlo
+{
+    margin: auto;
+    background-image: radial-gradient(#f0c743,#555,#555);
+    width: 100pt;
+    height: 100pt;
+    filter: blur(2px);
+}
+#trybtlo:hover
+{
+    filter: none;
+}
+#tryb
+{
+    background: url(light.png);
+    background-size: 100%;
+    width: 100pt;
+    height: 100pt;
+    border-style: none;
+    color: transparent;
+}
+#jezyk
+{
+    background: url(polish.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 150pt;
+    height: 80pt;
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 20pt;
+    border-style: none;
+    color: transparent;
+}
+#jezyk:hover
+{
+    transition: 0.5s;
+    filter: drop-shadow(0 0 30px white);
+}
+#mainfooter
+{
+    margin: auto;
+    padding: 7pt;
+    width: 30vw;
+    border: 10pt solid #4a4c4f;
+    border-radius: 60pt;
+    background-image: url(gradient.png);
+    animation-name:animacja;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacja
+{
+	0% 
+    {
+		background-position: left;
+	}
+	100% 
+    {
+		background-position: right;
+	}
+    0% 
+    {
+		background-position: left;
+	}
+}
+#footer
+{
+    margin: auto;
+    background: #4a4c4f;
+    color: white;
+    font-size: 20pt;
+    border: 10pt solid #4a4c4f;
+    border-radius: 60pt;
+    font-weight: 700;
+}
+@media screen and (max-width: 1250px)
+{
+    #liquidborder
+    {
+        width: 90vw;
+    }
+    #wyswietlacz
+    {
+        width: 89vw;
+        height: 10vh;
+    }
+    .znaki
+    {
+        width: 42vw;
+        height: 10vh;
+    }
+    .liczby
+    {
+        width: 27vw;
+        height: 10vh;
+    }
+    .znaki2
+    {
+        width: 20vw;
+        height: 10vh;
+    }
+    #znakinaukoweprzycisk,#pamiecprzycisk
+    {
+        width: 40vw;
+        height: 12vh;
+    }
+    #blok
+    {
+        width: auto;
+    }
+    .znakiwlasne,.konwerter
+    {
+        width: 20vw;
+        height: 10vh;
+    }
+    #pamiec
+    {
+        width: 80vw;
+        font-size: 20pt;
+    }
+    #ustawieniaprzycisk
+    {
+        width: 170pt;
+        height: 170pt;
+    }
+    #ustawienia
+    {
+        width: 80vw;
+    }
+    #tryb,#trybtlo
+    {
+        width: 150pt;
+        height: 150pt;
+    }
+    #jezyk
+    {
+        width: 225pt;
+        height: 120pt;
+    }
+}
+@media screen and (max-width: 1100px)
+{
+    .znaki2
+    {
+        width: 18vw;
+        height: 10vh;
+    }
+    .znakinaukowe
+    {
+        width: 24vw;
+        height: 12vh;
+        margin: 15pt;
+    }
+    .znakiwlasne,.konwerter
+    {
+        width: 25vw;
+        height: 12vh;
+    }
+    #pamiec
+    {
+        width: 80vw;
+        font-size: 25pt;
+    }
+    #ustawieniaprzycisk
+    {
+        width: 200pt;
+        height: 200pt;
+    }
+    #ustawienia
+    {
+        width: 80vw;
+    }
+    #tryb,#trybtlo
+    {
+        width: 300pt;
+        height: 300pt;
+    }
+    #jezyk
+    {
+        width: 450pt;
+        height: 240pt;
+    }
+    #footer
+    {
+        font-size: 35pt;
+        width: 40vw;
+    }
+    #mainfooter
+    {
+       width: 43vw; 
+    }
+}
+@media screen and (max-width: 500px)
+{
+    #znakinaukoweprzycisk,#pamiecprzycisk
+    {
+        width: 40vw;
+        height: 12vh;
+    }
+    .pamiecfunkcje
+    {
+        width: 35vw;
+        height: 10vh;
+        font-size: 20pt;
+    }
+    #pamiec
+    {
+        width: 80vw;
+        font-size: 40pt;
+    }
+}
+@media screen and (max-height: 1000px)
+{
+    #liquidborder
+    {
+        margin-top: 10pt;
+        width: 98vw;
+    }
+    #wyswietlacz
+    {
+        width: 97vw;
+        height: 16vh;
+    }
+    .znaki
+    {
+        width: 45vw;
+        height: 15vh;
+    }
+    .liczby
+    {
+        width: 29vw;
+        height: 15vh;
+    }
+    .znaki2
+    {
+        width: 21vw;
+        height: 16vh;
+    }
+    #znakinaukoweprzycisk,#pamiecprzycisk
+    {
+        width: 50vw;
+        height: 18vh;
+    }
+    #blok
+    {
+        width: auto;
+    }
+    .znakinaukowe
+    {
+        margin: 10pt;
+        width: 27vw;
+        height: 16vh;
+    }
+    .znakiwlasne,.konwerter
+    {
+        width: 35vw;
+        height: 20vh;
+    }
+    .pamiecfunkcje
+    {
+        width: 30vw;
+        height: 15vh;
+        font-size: 20pt;
+    }
+    #pamiec
+    {
+        width: 80vw;
+        font-size: 20pt;
+    }
+    #ustawieniaprzycisk
+    {
+        width: 150pt;
+        height: 150pt;
+    }
+    #ustawienia
+    {
+        width: 80vw;
+    }
+    #tryb,#trybtlo
+    {
+        width: 150pt;
+        height: 150pt;
+    }
+    #jezyk
+    {
+        width: 225pt;
+        height: 120pt;
+    }
+}
+
